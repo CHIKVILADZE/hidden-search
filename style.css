@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    box-sizing:border-box;
+
+}
+body{
+    background-image:url(image/hi-tech-digital-display-holographic-information-abstract-background_24070-563.webp);
+    background-repeat:no-repeat;
+    font-family: "roboto" sans-serif;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height:100vh;
+    overflow:hidden;
+}
+
+.input{
+    width:200px;
+    height:40px;
+}
+.btn{
+    width:40px;
+    height:40px;
+}
+
+.search{
+    position:relative;
+    height:50px;
+}
+
+.search .input{
+    border:none;
+    font-size:18px;
+    padding:15px;
+    height:50px;
+    width:50px;
+    transition: width 0.3s ease;
+}
+
+.btn{
+    border:none;
+    cursor:pointer;
+    font-size:24px;
+    width:50px;
+    height:50px;
+    position:absolute;
+    top:0;
+    left:0;
+    transition:transform 0.3s ease;
+}
+
+.btn:focus,
+.input:focus{
+    outline:none;
+}
+
+.search.active .input{
+    width:200px;
+}
+
+.search.active .btn{
+    transform:translateX(198px);
+}
